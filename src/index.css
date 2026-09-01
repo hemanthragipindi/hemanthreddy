@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500;700&family=Inter:wght@300;400;600&display=swap');
+
+:root {
+  --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --font-headings: 'Prompt', sans-serif;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f4f4f4;
+  --text-primary: #000624;
+  --text-secondary: #555555;
+  --accent-color: #2b2b2b;
+  --border-color: #eaeaea;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Base Button Styles */
+button, .btn {
+  padding: 12px 24px;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1rem;
+}
+
+button:hover, .btn:hover {
+  opacity: 0.8;
+}
+
+/* =========================================
+   RESPONSIVE OVERRIDES (MOBILE & TABLET)
+   ========================================= */
+@media (max-width: 768px) {
+  /* Global */
+  section {
+    padding: 40px 15px !important;
+  }
+
+  /* Navbar */
+  nav {
+    flex-direction: column !important;
+    gap: 15px !important;
+    padding: 15px !important;
+  }
+  nav ul {
+    justify-content: center !important;
+    gap: 12px !important;
+  }
+
+  /* Hero */
+  #home {
+    padding: 20px 15px !important;
+  }
+  #home > div:last-child {
+    flex-direction: column !important;
+    gap: 40px !important;
+    margin-top: 20px !important;
+  }
+  #home > div:last-child > div:last-child {
+    text-align: center !important;
+  }
+  #home > div:last-child > div:last-child h2 {
+    font-size: 32px !important;
+  }
+  #home > div:last-child > div:last-child div[style*="display: flex"] {
+    justify-content: center !important;
+  }
+  
+  /* About */
+  #about h2 {
+    font-size: 32px !important;
+  }
+  #about p {
+    font-size: 16px !important;
+  }
+  #about > div:last-child {
+    flex-direction: column !important;
+    gap: 15px !important;
+    width: 100% !important;
+  }
+  #about > div:last-child a {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  /* Projects */
+  #projects h2 {
+    font-size: 28px !important;
+  }
+  #projects > div:last-child > div {
+    flex-direction: column-reverse !important;
+    gap: 20px !important;
+  }
+  #projects > div:last-child > div > div:first-child {
+    align-items: center !important;
+    text-align: center !important;
+  }
+  #projects > div:last-child > div > div:first-child div[style*="display: flex"] {
+    justify-content: center !important;
+  }
+
+  /* Certifications */
+  #certifications h2 {
+    font-size: 24px !important;
+  }
+  #certifications > div:last-child > div {
+    flex-direction: column-reverse !important;
+    gap: 20px !important;
+    padding: 30px 0 !important;
+  }
+  #certifications > div:last-child > div > div:last-child {
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  /* Experience */
+  #experience h2 {
+    font-size: 20px !important;
+  }
+  #experience > div:last-child > div {
+    flex-direction: column !important;
+  }
+  #experience > div:last-child > div > div {
+    padding: 20px !important;
+  }
+  #experience > div:last-child > div > div:last-child > div {
+    text-align: center !important;
+    align-items: center !important;
+  }
+
+  /* Skills */
+  #skills h2 {
+    font-size: 20px !important;
+  }
+
+  /* Contact */
+  #contact h2 {
+    font-size: 24px !important;
+  }
+  #contact > div:last-child {
+    padding: 30px 20px !important;
+  }
+  #contact form > div:first-child {
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+  #contact button {
+    width: 100% !important;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 30px !important;
+    text-align: center !important;
+  }
+  footer > div:last-child {
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 20px !important;
+  }
+  footer > div:last-child > div {
+    align-items: center !important;
+  }
+}
+
